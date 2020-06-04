@@ -14,10 +14,8 @@ let appData = {
   savings: true
 };
 
-appData.expenses[prompt("Введите обязательную статью расходов в этом месяце", "")] = +prompt("Во сколько обойдется", "");
-//let firstAns = prompt = ("Введите обязательную статью расходов в этом месяце", "");
-//let secondAns = h
+for(let i = 0; i < 2; i++) {
+  appData.expenses[prompt("введите обязательную статью расходов в этом месяце", "")] = +prompt("во сколько обойдется", "");
+}
 
 alert(`Бюджет на один день ${appData.budget/30}`);
-
-
